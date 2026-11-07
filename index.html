@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christian Joël Noutsawo Zanguim – Translator</title>
+<meta name="description" content="Professional translator and post-editor (EN/ES → FR). Technical, financial, legal, medical, localization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14302f;--bg:#f2f6f6;--card:#fff;--muted:#4d6361;--line:#cfdcdb;--accent:#d19a1f}
+@media (prefers-color-scheme:dark){:root{--ink:#e6f0ef;--bg:#0f1c1c;--card:#16292a;--muted:#a3b9b7;--line:#2a4243}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Work Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header{padding:28px 0 8px}
+.greet{display:flex;flex-wrap:wrap;gap:6px 22px;font:italic 400 clamp(26px,5vw,40px)/1.2 Newsreader,serif}
+.greet button{all:unset;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;padding-bottom:2px}
+.greet button[aria-pressed=true]{color:var(--ink);border-color:var(--accent)}
+.greet button:focus-visible{outline:3px solid var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1fr 170px;gap:32px;align-items:center;padding:44px 0 30px}
+h1{font:600 clamp(34px,6vw,54px)/1.1 Newsreader,serif;margin:0 0 14px;letter-spacing:-.01em}
+.sub{font-size:19px;color:var(--muted);margin:0}
+.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;background:var(--line)}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font:600 28px/1.2 Newsreader,serif;margin:0 0 14px}
+p{margin:0 0 12px;max-width:68ch}
+ul{margin:0;padding-left:20px}li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 18px}
+.card b{display:block;font-family:Newsreader,serif;font-size:19px;margin-bottom:4px}
+.card span{color:var(--muted);font-size:15px}
+.note{color:var(--muted);font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 18px;margin-top:10px}
+summary{cursor:pointer;font:600 20px Newsreader,serif}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:4px;text-decoration:none;font-weight:500}
+footer{padding:28px 0 50px;color:var(--muted);font-size:14px}
+@media(max-width:620px){.hero{grid-template-columns:1fr}.photo{order:-1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="greet" role="group" aria-label="Language">
+    <button data-l="fr">Bonjour</button><button data-l="en">Hello</button><button data-l="es">Hola</button><button data-l="de">Hallo</button>
+  </div>
+  <nav>
+    <a href="#about" data-t="nav_about"></a><a href="#services" data-t="nav_services"></a>
+    <a href="#projects" class="full" data-t="nav_projects"></a><a href="#blog" class="full" data-t="nav_blog"></a>
+    <a href="#contact" data-t="nav_contact"></a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>Christian Joël<br>Noutsawo Zanguim</h1>
+    <p class="sub" data-t="sub"></p>
+  </div>
+  <img class="photo" src="photo.jpg" alt="Christian Joël Noutsawo Zanguim" onerror="this.style.display='none'">
+</div>
+
+<section id="about"><h2 data-t="about_h"></h2><p data-t="about_p"></p><p data-t="about_p2"></p>
+  <p class="note" data-t="langs"></p></section>
+
+<section id="services"><h2 data-t="svc_h"></h2><ul data-list="svc"></ul>
+  <p class="note" style="margin-top:12px" data-t="tools"></p></section>
+
+<section id="projects" class="full"><h2 data-t="proj_h"></h2><p class="note" data-t="proj_note"></p>
+  <div class="grid" data-cards="projs"></div></section>
+
+<section id="blog" class="full"><h2 data-t="blog_h"></h2><p data-t="blog_p"></p>
+  <details><summary>Bafoussam: a cool highland crossroads</summary>
+  <p>Bafoussam sits at roughly 1,400 metres above sea level, and you notice it immediately: cooler air, light jackets in the evening, and hills in every shade of green. As the capital of the West Region, it is busy and practical, but it is also the best base for exploring the Grassfields and the traditional chiefdoms of the Bamiléké people.</p>
+  <p>Start at the central market in the morning, when it is liveliest. Then head to Bandjoun, where traditional architecture meets contemporary art. Foumban, with its Bamum palace and craft tradition, makes an easy day trip. The dry season, from about November to March, is the most comfortable time to travel.</p></details></section>
+
+<section id="contact"><h2 data-t="contact_h"></h2><p data-t="contact_p"></p>
+  <p><a class="btn" href="mailto:christnoutsawo@gmail.com">christnoutsawo@gmail.com</a></p>
+  <p class="note"><a href="https://www.linkedin.com/in/christian-noutsawo-19ba0aa0/">LinkedIn</a> · <a href="http://www.proz.com/profile/2113733">ProZ</a> · +237 675 078 304</p></section>
+</main>
+<footer>© 2026 Christian Joël Noutsawo Zanguim · Bafoussam, Cameroon</footer>
+</div>
+
+<script>
+var T={
+en:{nav_about:"About",nav_services:"Services",nav_projects:"Projects",nav_blog:"Blog",nav_contact:"Contact",
+sub:"Professional translator and post-editor, English and Spanish into French.",
+about_h:"About",about_p:"I am a professional translator with more than 10 years of experience and a Master's degree in Translation and Interpretation from the University of Dschang. I work with agencies and direct clients on technical, financial, legal, medical and software content.",
+about_p2:"Outside work, I enjoy reading, sport, walking and travel.",
+langs:"Working languages: French (native), English, Spanish. German at a basic level.",
+svc_h:"Services",svc:["Translation English → French and Spanish → French","Machine translation post-editing (MTPE)","Software, website and app localization","Review, proofreading and terminology research","Interpreting (consecutive) and subtitling"],
+tools:"Tools: MemoQ, Trados Studio, Phrase, XTM, Across, Matecat, Smartcat, Crowdin, Xbench, Antidote.",
+proj_h:"Selected projects",proj_note:"Client names are withheld under confidentiality agreements.",
+projs:[["Large e-commerce company","Spanish → French post-editing, 98,000 words"],["Financial software publisher","Release notes post-editing, up to 75,000 words"],["Major bank","Terms and conditions, 10,000 words"],["Website builder","UI/UX localization (2022–2023) and legal updates"],["Industrial and automotive manufacturers","User and service manuals, up to 15,000 words"],["International development organization","Agricultural report, 30,000 words"],["Technology company","STEM translation for AI training, 12,000 words"]],
+blog_h:"Blog",blog_p:"Notes on translation, languages and places I know. More articles are coming.",
+contact_h:"Contact",contact_p:"Send me your text and deadline for a quote. I reply within one working day."},
+fr:{nav_about:"À propos",nav_services:"Services",nav_projects:"Projets",nav_blog:"Blog",nav_contact:"Contact",
+sub:"Traducteur professionnel et post-éditeur, de l'anglais et de l'espagnol vers le français.",
+about_h:"À propos",about_p:"Je suis traducteur professionnel avec plus de 10 ans d'expérience et un Master en Traduction et Interprétation de l'Université de Dschang. Je travaille avec des agences et des clients directs sur des contenus techniques, financiers, juridiques, médicaux et logiciels.",
+about_p2:"En dehors du travail, j'aime la lecture, le sport, les balades et les voyages.",
+langs:"Langues de travail : français (langue maternelle), anglais, espagnol. Allemand de niveau élémentaire.",
+svc_h:"Services",svc:["Traduction anglais → français et espagnol → français","Post-édition de traduction automatique (PEMT)","Localisation de logiciels, sites web et applications","Révision, relecture et recherche terminologique","Interprétation consécutive et sous-titrage"],
+tools:"Outils : MemoQ, Trados Studio, Phrase, XTM, Across, Matecat, Smartcat, Crowdin, Xbench, Antidote.",
+proj_h:"Projets sélectionnés",proj_note:"Les noms des clients ne sont pas cités, par respect des clauses de confidentialité.",
+projs:[["Grande entreprise de e-commerce","Post-édition espagnol → français, 98 000 mots"],["Éditeur de logiciels financiers","Post-édition de notes de version, jusqu'à 75 000 mots"],["Grande banque","Conditions générales, 10 000 mots"],["Créateur de sites web","Localisation UI/UX (2022-2023) et mises à jour juridiques"],["Industriels et constructeurs automobiles","Manuels d'utilisation et d'entretien, jusqu'à 15 000 mots"],["Organisation de développement international","Rapport agricole, 30 000 mots"],["Entreprise technologique","Traduction STEM pour l'entraînement d'IA, 12 000 mots"]],
+blog_h:"Blog",blog_p:"Notes sur la traduction, les langues et les lieux que je connais. D'autres articles arrivent.",
+contact_h:"Contact",contact_p:"Envoyez-moi votre texte et votre délai pour obtenir un devis. Je réponds sous un jour ouvré."},
+es:{nav_about:"Sobre mí",nav_services:"Servicios",nav_projects:"Proyectos",nav_blog:"Blog",nav_contact:"Contacto",
+sub:"Traductor profesional y poseditor, del inglés y del español al francés.",
+about_h:"Sobre mí",about_p:"Soy traductor profesional con más de 10 años de experiencia y un máster en Traducción e Interpretación por la Universidad de Dschang. Trabajo con agencias y clientes directos en contenidos técnicos, financieros, jurídicos, médicos y de software.",
+about_p2:"Fuera del trabajo, me gustan la lectura, el deporte, los paseos y los viajes.",
+langs:"Idiomas de trabajo: francés (lengua materna), inglés, español. Alemán de nivel básico.",
+svc_h:"Servicios",svc:["Traducción inglés → francés y español → francés","Poslectura de traducción automática (PETA)","Localización de software, sitios web y aplicaciones","Revisión, corrección e investigación terminológica","Interpretación consecutiva y subtitulado"],
+tools:"Herramientas: MemoQ, Trados Studio, Phrase, XTM, Across, Matecat, Smartcat, Crowdin, Xbench, Antidote.",
+proj_h:"Proyectos seleccionados",proj_note:"No se citan los nombres de los clientes, por las cláusulas de confidencialidad.",
+projs:[["Gran empresa de comercio electrónico","Poslectura español → francés, 98 000 palabras"],["Editor de software financiero","Poslectura de notas de versión, hasta 75 000 palabras"],["Gran banco","Términos y condiciones, 10 000 palabras"],["Creador de sitios web","Localización UI/UX (2022-2023) y actualizaciones jurídicas"],["Fabricantes industriales y de automoción","Manuales de uso y mantenimiento, hasta 15 000 palabras"],["Organización de desarrollo internacional","Informe agrícola, 30 000 palabras"],["Empresa tecnológica","Traducción STEM para entrenamiento de IA, 12 000 palabras"]],
+blog_h:"Blog",blog_p:"Notas sobre traducción, idiomas y lugares que conozco. Pronto habrá más artículos.",
+contact_h:"Contacto",contact_p:"Envíeme su texto y su plazo para recibir un presupuesto. Respondo en un día laborable."},
+de:{nav_about:"Über mich",nav_services:"Leistungen",nav_contact:"Kontakt",
+sub:"Professioneller Übersetzer, Englisch und Spanisch ins Französische.",
+about_h:"Über mich",about_p:"Ich bin Übersetzer mit mehr als 10 Jahren Berufserfahrung. Meine Arbeitssprachen sind Französisch, Englisch und Spanisch.",
+about_p2:"Diese Seite ist in deutscher Kurzfassung verfügbar. Die vollständigen Informationen finden Sie auf Englisch, Französisch und Spanisch.",
+langs:"Deutsch: Grundkenntnisse.",
+svc_h:"Leistungen",svc:["Übersetzung Englisch → Französisch und Spanisch → Französisch","Post-Editing maschineller Übersetzung","Lokalisierung von Software und Websites"],
+tools:"",contact_h:"Kontakt",contact_p:"Schicken Sie mir Ihren Text und Ihre Frist für ein Angebot."}
+};
+function set(l){
+  var d=T[l];document.documentElement.lang=l;
+  document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=d[e.dataset.t]||""});
+  document.querySelectorAll("[data-list]").forEach(function(e){e.innerHTML="";d[e.dataset.list].forEach(function(x){var li=document.createElement("li");li.textContent=x;e.appendChild(li)})});
+  document.querySelectorAll("[data-cards]").forEach(function(e){e.innerHTML="";(d.projs||[]).forEach(function(p){var c=document.createElement("div");c.className="card";var b=document.createElement("b");b.textContent=p[0];var s=document.createElement("span");s.textContent=p[1];c.appendChild(b);c.appendChild(s);e.appendChild(c)})});
+  document.querySelectorAll(".full").forEach(function(e){e.style.display=l==="de"?"none":""});
+  document.querySelectorAll(".greet button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
+  try{localStorage.setItem("lang",l)}catch(x){}
+}
+document.querySelectorAll(".greet button").forEach(function(b){b.onclick=function(){set(b.dataset.l)}});
+var s="en";try{s=localStorage.getItem("lang")||((navigator.language||"en").slice(0,2))}catch(x){}
+set(T[s]?s:"en");
+</script>
+</body>
+</html>
